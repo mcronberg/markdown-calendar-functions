@@ -2,6 +2,11 @@
     "name": "markdown-calendar-functions",
     "displayName": "Markdown Calendar Functions",
     "description": "An extension for inserting dates and calendars in different formats in markdown files.",
+    "publisher": "michellcronberg",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mcronberg/markdown-calendar-functions/"
+    },
     "version": "0.0.2",
     "engines": {
         "vscode": "^1.80.0"
@@ -63,8 +68,7 @@
     },
     "scripts": {
         "lint": "eslint .",
-        "pretest": "npm run lint",
-        "test": "node ./test/runTest.js"
+        "compile": "webpack --mode production"
     },
     "devDependencies": {
         "@types/glob": "^8.1.0",
@@ -75,7 +79,9 @@
         "eslint": "^8.41.0",
         "glob": "^8.1.0",
         "mocha": "^10.2.0",
-        "typescript": "^5.1.3"
+        "typescript": "^5.1.3",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4"
     },
     "dependencies": {
         "moment": "^2.29.4"
