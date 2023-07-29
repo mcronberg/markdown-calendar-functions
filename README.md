@@ -67,6 +67,15 @@ Here are the 10 most commonly used locales:
 
 For more information on date formats, see the [Moment.js display documentation](https://momentjs.com/docs/#/displaying/).
 
+## Credits
+
+This project was developed with the help of the following resources:
+
+- [Moment.js](https://momentjs.com/): A powerful library for parsing, validating, manipulating, and displaying dates and times in JavaScript.
+- [ChatGPT](https://www.openai.com/chatgpt/): An advanced language model developed by OpenAI, which assisted in generating the code and providing guidance during the development process.
+- [Visual Studio Code](https://code.visualstudio.com/): A highly customizable and versatile text editor with integrated development environment features that was used for creating and testing this extension.
+
+
 ## License
 
 MIT
