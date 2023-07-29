@@ -2,7 +2,13 @@
 
 All notable changes to the "Markdown Calendar Functions" extension will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+## [0.0.2] - 2023-07-30
+
+### Added
+
+- Added new function "Insert upcoming week" to insert dates for each day of the upcoming week, starting from the first day of the week defined in your settings, each prefixed by an entered prefix.
+- New settings for defining the first day of the week (0 - Sunday, 1 - Monday, ..., 6 - Saturday).
+- README file updated with the new function and setting.
 
 ## [0.0.1] - 2023-07-29
 

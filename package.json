@@ -2,7 +2,7 @@
     "name": "markdown-calendar-functions",
     "displayName": "Markdown Calendar Functions",
     "description": "An extension for inserting dates and calendars in different formats in markdown files.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.80.0"
     },
@@ -30,6 +30,11 @@
                     "type": "string",
                     "default": "en",
                     "description": "Locale to use when formatting dates."
+                },
+                "markdown-calendar-functions.firstDayOfWeek": {
+                    "type": "integer",
+                    "default": 1,
+                    "description": "First day of the week (0=Sunday to 6=Saturday)."
                 }
             }
         },
@@ -47,6 +52,11 @@
             {
                 "command": "markdown-calendar-functions.reformatDate",
                 "title": "Reformat date",
+                "category": "Calendar"
+            },
+            {
+                "command": "markdown-calendar-functions.insertUpcomingWeek",
+                "title": "Insert upcoming week",
                 "category": "Calendar"
             }
         ]

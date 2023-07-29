@@ -27,6 +27,9 @@ Once installed, you can use the following commands by pressing `F1` and typing t
 
 - **Calendar: Reformat date**: Reads the date at the cursor position in the markdown file, prompts you to choose or enter a format, and then replaces the date with its reformatted version.
 
+- **Calendar: Insert upcoming week**: Prompts you to choose or enter a date format and an optional prefix, then inserts dates for each day of the upcoming week, starting from the first day of the week defined in your settings, each prefixed by the entered prefix.
+
+
 ## Settings
 
 You can specify your preferred date formats and locale in the settings:
