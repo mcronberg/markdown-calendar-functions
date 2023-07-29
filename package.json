@@ -1,0 +1,73 @@
+{
+    "name": "markdown-calendar-functions",
+    "displayName": "Markdown Calendar Functions",
+    "description": "An extension for inserting dates and calendars in different formats in markdown files.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [],
+    "main": "./extension.js",
+    "contributes": {
+        "configuration": {
+            "title": "Markdown Calendar Functions",
+            "properties": {
+                "markdown-calendar-functions.dateFormats": {
+                    "type": "array",
+                    "default": [
+                        "YYYY-MM-DD",
+                        "MM-DD-YYYY",
+                        "DD-MM-YYYY",
+                        "MMMM Do YYYY",
+                        "dddd, MMMM Do YYYY"
+                    ],
+                    "description": "Date formats to use when inserting dates."
+                },
+                "markdown-calendar-functions.locale": {
+                    "type": "string",
+                    "default": "en",
+                    "description": "Locale to use when formatting dates."
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "markdown-calendar-functions.insertCurrentDate",
+                "title": "Insert current date/time",
+                "category": "Calendar"
+            },
+            {
+                "command": "markdown-calendar-functions.insertDate",
+                "title": "Insert date",
+                "category": "Calendar"
+            },
+            {
+                "command": "markdown-calendar-functions.reformatDate",
+                "title": "Reformat date",
+                "category": "Calendar"
+            }
+        ]
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "node ./test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^8.1.0",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "20.2.5",
+        "@types/vscode": "^1.80.0",
+        "@vscode/test-electron": "^2.3.2",
+        "eslint": "^8.41.0",
+        "glob": "^8.1.0",
+        "mocha": "^10.2.0",
+        "typescript": "^5.1.3"
+    },
+    "dependencies": {
+        "moment": "^2.29.4"
+    }
+}
